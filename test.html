@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <title>test</title>
+    <style>
+        .happy{
+          width: 800px;
+          margin: 50px auto;
+          overflow: hidden; /* 避免長方框下面顯示不正常 */
+        }
+        .bdcard{
+          width: 300px;
+          float:left; /* 圖片在左邊 */
+          padding: 20px;
+        }
+        .bdcard img{
+          display: block;
+          width:100%;
+        }
+        .bdtext{
+          float: right;  /* 文字在右邊 */
+          width: 430px;
+          padding: 20px 20px 0px 0px;
+        }
+    </style>
+    
+  </head>
+  <body>
+    
+    <p>Date/Time: <span id="datetime"></span></p>
+
+    <script>
+    
+    function changetime(){
+      
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-1)) +"-"+ (("0"+dt.getDate()).slice(-2)) +"-"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2)) + ":"+(("0"+dt.getSeconds()).slice(-2));
+    }
+    changetime();
+    setInterval("changetime()",1000)
+    
+    </script>
+  </body>
+</html>

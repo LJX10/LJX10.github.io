@@ -1,0 +1,27 @@
+
+.paragraph1{
+    width: 800px;
+    overflow: hidden; /* 避免長方框下面顯示不正常 */
+}
+.picture1{
+    width: 300px;
+    float:left; /* 圖片在左邊 */
+    padding: 20px;
+}
+.picture1 img{
+    display: block;
+    width:100%;
+}
+.txt{
+    float: right;  /* 文字在右邊 */
+    width: 430px;
+    padding: 20px 20px 0px 0px;
+}
+.paragraph2{
+    margin: 20px
+}
+
+
+a:link    {color:blue;}
+a:visited {color:red;}
+a:hover   {color:red;}
