@@ -1,27 +1,42 @@
 
 .paragraph1{
-    width: 800px;
+    margin: auto;
+    font-family: monospace;
+    width: 1000px;
     overflow: hidden; /* 避免長方框下面顯示不正常 */
 }
 .picture1{
     width: 300px;
     float:left; /* 圖片在左邊 */
-    padding: 20px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 50px;
 }
 .picture1 img{
-    display: block;
     width:100%;
 }
 .txt{
-    float: right;  /* 文字在右邊 */
-    width: 430px;
-    padding: 20px 20px 0px 0px;
+    float:left;
+    font-family: monospace;
+    width: 500px;
+    padding-top: 50px;
 }
 .paragraph2{
-    margin: 20px
+    margin: auto;
+    font-family: monospace;
+    width: 1000px;
+    background-color:antiquewhite;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.time{
+    margin: 0 auto;
+    text-align: center;
 }
 
 
 a:link    {color:blue;}
-a:visited {color:red;}
 a:hover   {color:red;}
